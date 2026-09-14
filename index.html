@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="MR. ROD GAMER Enterprise — gaming, cybersecurity, CCTV, solar, real estate and technology solutions.">
+<meta name="theme-color" content="#071018">
+<title>MR. ROD GAMER Enterprise | Gaming • Security • Solar • Real Estate</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="topbar">🚀 MR. ROD GAMER Enterprise — Technology, Security, Energy & Lifestyle Solutions</div>
+<header class="nav">
+  <a class="brand" href="#home"><img src="assets/logo.jpg" alt="MR. ROD GAMER logo"><span>MR. ROD GAMER <small>ENTERPRISE</small></span></a>
+  <button class="menu" aria-label="Menu">☰</button>
+  <nav>
+    <a href="#home">Home</a><a href="#store">Store</a><a href="#services">Services</a>
+    <a href="#magazine">Magazine</a><a href="#about">About</a><a href="#contact">Contact</a>
+  </nav>
+  <button class="cart-btn" onclick="openCart()">🛒 <span id="cartCount">0</span></button>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">MR. ROD GAMER ENTERPRISE</p>
+    <h1>BUILD. SECURE.<br><em>POWER. PLAY.</em></h1>
+    <p>One modern brand for gaming products, cybersecurity, CCTV security, solar energy, real estate and technology solutions.</p>
+    <div class="actions"><a class="btn primary" href="#store">Shop Gaming</a><a class="btn ghost" href="#quote">Get a Quote</a></div>
+    <div class="trust"><span>✓ WhatsApp ordering</span><span>✓ Installation services</span><span>✓ Business enquiries</span></div>
+  </div>
+  <div class="hero-panel">
+    <img src="assets/ceo.jpg" alt="MR. ROD, CEO and Founder">
+    <div class="ceo-tag"><b>MR. ROD</b><span>CEO / Founder</span></div>
+  </div>
+</section>
+
+<section class="ticker"><div>🎮 GAMING</div><div>🛡️ CYBERSECURITY</div><div>📹 CCTV</div><div>☀️ SOLAR</div><div>🏠 REAL ESTATE</div><div>💻 TECHNOLOGY</div></section>
+
+<section id="store" class="section">
+  <div class="section-head"><div><p class="eyebrow">ONLINE STORE</p><h2>Featured Products</h2></div><div class="filters"><button class="filter active" data-cat="all">All</button><button class="filter" data-cat="gaming">Gaming</button><button class="filter" data-cat="security">Security</button><button class="filter" data-cat="solar">Solar</button></div></div>
+  <div id="products" class="product-grid"></div>
+</section>
+
+<section id="services" class="section dark">
+  <p class="eyebrow">OUR SERVICES</p><h2>Solutions for Home, Business & Gamers</h2>
+  <div class="service-grid">
+    <article><span>🎮</span><h3>Gaming & Accessories</h3><p>Controllers, gaming accessories, equipment and gamer-focused products.</p><a href="#store">Shop now →</a></article>
+    <article><span>🛡️</span><h3>Cybersecurity</h3><p>Cybersecurity awareness, digital protection guidance and authorized security solutions.</p><a href="#contact">Enquire →</a></article>
+    <article><span>📹</span><h3>CCTV Installation</h3><p>Camera sales, installation and practical surveillance solutions for homes and businesses.</p><a href="#quote">Get CCTV quote →</a></article>
+    <article><span>☀️</span><h3>Solar Installation</h3><p>Solar products and installation planning for dependable residential and business power.</p><a href="#quote">Get solar quote →</a></article>
+    <article><span>🏠</span><h3>Real Estate</h3><p>Property opportunities and real-estate support for buyers, sellers and investors.</p><a href="#contact">Enquire →</a></article>
+    <article><span>💻</span><h3>Technology</h3><p>Practical technology products and digital solutions for customers and businesses.</p><a href="#contact">Talk to us →</a></article>
+  </div>
+</section>
+
+<section id="quote" class="section quote-section">
+  <div class="section-head"><div><p class="eyebrow">REQUEST A QUOTE</p><h2>CCTV & Solar Quote Desk</h2></div><p class="muted">Submit your details and the site will prepare a WhatsApp enquiry for you.</p></div>
+  <div class="quote-grid">
+    <form id="quoteForm" class="form">
+      <label>Service<select id="quoteService" required><option value="">Select service</option><option>CCTV Installation</option><option>Solar Installation</option></select></label>
+      <label>Full name<input id="quoteName" required placeholder="Your name"></label>
+      <label>Phone<input id="quotePhone" required placeholder="+234..."></label>
+      <label>Location<input id="quoteLocation" required placeholder="City / Area"></label>
+      <label>Property type<select id="quoteProperty"><option>Home</option><option>Shop</option><option>Office</option><option>Estate</option><option>Other</option></select></label>
+      <label>Tell us what you need<textarea id="quoteDetails" rows="5" placeholder="CCTV: number of cameras, indoor/outdoor, viewing needs. Solar: appliances, battery/inverter needs, estimated usage."></textarea></label>
+      <button class="btn primary" type="submit">Send Quote Request on WhatsApp</button>
+    </form>
+    <aside class="quote-info"><div class="number">01</div><h3>Describe your need</h3><p>Give us your location, property type and project details.</p><div class="number">02</div><h3>We review it</h3><p>We can discuss suitable equipment, installation and pricing.</p><div class="number">03</div><h3>Get your quote</h3><p>Your enquiry is sent directly through WhatsApp.</p></aside>
+  </div>
+</section>
+
+<section id="magazine" class="section dark">
+  <div class="section-head"><div><p class="eyebrow">MR. ROD MAGAZINE</p><h2>Latest Stories</h2></div><a class="text-link" href="blog.html">View all articles →</a></div>
+  <div class="blog-grid">
+    <article class="story"><div class="story-art gaming-art">🎮</div><p>GAMING</p><h3>How to build a better gaming setup on a budget</h3><a href="blog.html#gaming-setup">Read article →</a></article>
+    <article class="story"><div class="story-art security-art">🛡️</div><p>SECURITY</p><h3>5 practical ways to improve your digital security</h3><a href="blog.html#cybersecurity">Read article →</a></article>
+    <article class="story"><div class="story-art solar-art">☀️</div><p>ENERGY</p><h3>What to consider before installing a solar system</h3><a href="blog.html#solar">Read article →</a></article>
+  </div>
+</section>
+
+<section id="about" class="section about">
+  <img src="assets/ceo.jpg" alt="MR. ROD">
+  <div><p class="eyebrow">ABOUT THE ENTERPRISE</p><h2>More Than a Brand — A Growing Enterprise.</h2><p>MR. ROD GAMER Enterprise combines a passion for gaming with a wider entrepreneurial vision across cybersecurity, physical security, renewable energy, real estate and technology.</p><p>Our promise is to provide practical solutions, professional service and a customer-first experience while continuously growing.</p><blockquote>BUILD • SECURE • POWER • INVEST • GROW</blockquote></div>
+</section>
+
+<section id="contact" class="contact">
+  <p class="eyebrow">LET'S WORK TOGETHER</p><h2>Talk to MR. ROD GAMER Enterprise</h2><p>Use WhatsApp for orders, installation enquiries, quotes, partnerships and general business questions.</p>
+  <div class="contact-actions"><a class="btn primary"  id="whatsappLink" target="_blank" rel="noopener">💬 WhatsApp Us</a><a class="btn ghost" href="mailto:mrrodgamerenterprise@yahoo.com">✉️ Email Us</a></div>
+  <p class="small-note">something <code>script.js</code> .</p>
+</section>
+</main>
+
+<footer><div><b>MR. ROD GAMER ENTERPRISE</b><p>Gaming • Cybersecurity • CCTV • Solar • Real Estate • Technology</p></div><div><a href="#store">Store</a><a href="blog.html">Magazine</a><a href="#quote">Get a Quote</a></div><small>© <span id="year"></span> MR. ROD GAMER Enterprise. All rights reserved.</small></footer>
+
+<div id="cartModal" class="modal"><div class="modal-card"><button class="close" onclick="closeCart()">×</button><h2>Your Cart</h2><div id="cartItems"></div><div class="cart-total">Total: <b id="cartTotal">₦0</b></div><button class="btn primary full" onclick="checkoutWhatsApp()">Order via WhatsApp</button></div></div>
+<script src="script.js"></script>
+</body>
+</html>
